@@ -1,8 +1,8 @@
 @UI @GoogleSearch
-Feature: Google Searching without results
+Feature: Google Searching with expected results
 
   @SanityChecks
-  Scenario Outline: Google searches using keyword without matching results
+  Scenario Outline: searche using simple keyword
     Given I am on "Google" page
     When I search for the keyword "<keyword>"
     Then results for "<keyword>" are displayed
